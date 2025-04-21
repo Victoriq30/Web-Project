@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "voLmlM8sKoOf0um2cqdpNRjeKyUQ6BlN1tbri4T9DBY=",
+  "Hash": "9v59E6504wNP/wNzHJhhjR9QDKrF7Y9M/19Qv96Fwt8=",
   "Source": "IssueTracker",
   "BasePath": "_content/IssueTracker",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

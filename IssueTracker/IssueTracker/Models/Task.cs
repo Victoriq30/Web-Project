@@ -34,4 +34,5 @@ public class Task
     public List<TaskComment> Comments { get; set; } = new List<TaskComment>(); // discussion for task by users
 
     public TaskMeta Meta { get; set; } = new TaskMeta();
+    //TaskMetaid?
 }
