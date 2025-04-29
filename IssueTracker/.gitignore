@@ -1,14 +1,20 @@
-# Ignore Visual Studio files
+# Visual Studio
 .vs/
-.vscode/
 *.user
 *.suo
-*.userosscache
-*.sln.docstates
+*.sln
 
-# Ignore build directories
-/bin/
-/obj/
+# Build output
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
 
-# Ignore NuGet packages
-*.nupkg
+# User-specific files
+*.user
+*.db
+*.cache
+
+# ASP.NET Launch Settings
+Properties/launchSettings.json
