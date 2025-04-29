@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+.logout-button {
+    background-color: #FF5733; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 0.3s ease;
+}
+
+    .logout-button:hover {
+        background-color: #C0392B; 
+    }
