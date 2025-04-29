@@ -1,23 +1,37 @@
-# Visual Studio
-.vs/
-*.user
-*.suo
-*.sln
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Build output
-bin/
-obj/
-*.dll
-*.exe
-*.pdb
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
 
-# User-specific files
-*.user
-*.db
-*.cache
+# testing
+/coverage
 
-# ASP.NET Launch Settings
-Properties/launchSettings.json
+# production
+/build
 
-# macOS system files
+# misc
 .DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE and editor directories
+/.idea/
+/.vscode/
+
+# Operating system files
+Thumbs.db
+ehthumbs.db
+
+# Optional npm cache directory
+.npm/
+
+# Yarn lock files (if you're using yarn)
+yarn.lock
