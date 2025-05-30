@@ -31,14 +31,14 @@ namespace IssueTracker.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(Task newTask)
+        public async Task<IActionResult> Create(Ticket newTask)
         {
             var created = await _taskService.CreateTaskAsync(newTask);
             return CreatedAtAction(nameof(GetById), new { id = created.Id }, created);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(string id, Task updatedTask)
+        public async Task<IActionResult> Update(string id, Ticket updatedTask)
         {
             var success = await _taskService.UpdateTaskAsync(id, updatedTask);
             return success ? NoContent() : NotFound();

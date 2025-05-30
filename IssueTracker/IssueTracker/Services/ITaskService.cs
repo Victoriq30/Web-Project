@@ -4,10 +4,14 @@ namespace IssueTracker.Services
 {
     public interface ITaskService
     {
-        Task<List<Task>> GetAllTasksAsync();
-        Task<Task> GetTaskByIdAsync(string id);
-        Task<Task> CreateTaskAsync(Task newTask);
-        Task<bool> UpdateTaskAsync(string id, Task updatedTask);
+        Task<List<Ticket>> GetAllTasksAsync();
+        Task<Ticket> GetTaskByIdAsync(string id);
+        Task<Ticket> CreateTaskAsync(Ticket newTask);
+        Task<bool> UpdateTaskAsync(string id, Ticket updatedTask);
         Task<bool> DeleteTaskAsync(string id);
+        Task<List<Ticket>> GetByProjectIdAsync(string projectId);
+        Task<List<Ticket>> GetByAssigneeIdAsync(string assigneeId);
+        Task<List<Ticket>> GetByStatusAsync(string status);
+
     }
 }

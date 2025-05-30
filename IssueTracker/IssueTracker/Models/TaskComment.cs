@@ -10,7 +10,7 @@ namespace IssueTracker.Models
         [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; }
         public User Author { get; set; } //comment creator
-
+        public string TaskId { get; set; }
         public string Text { get; set; }
 
         [BsonDateTimeOptions(Kind = DateTimeKind.Utc)]

@@ -63,7 +63,7 @@ namespace IssueTracker.Data
             var projectSample = _dbContext.Projects.Find(p => p.Name == "Sample Project").FirstOrDefault();
             if (_dbContext.Tasks.CountDocuments(_ => true) == 0)
             {
-                var task = new Task
+                var task = new Ticket
                 {
                     Title = "Sample Task",
                     Description = "This is a sample task description.",
